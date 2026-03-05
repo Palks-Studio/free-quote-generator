@@ -41,21 +41,6 @@ Un outil web 100% client-side pour générer des devis professionnels en PDF, sa
 
 ---
 
-## Utilisation
-
-Aucune installation requise. Ouvrir `index.html` dans un navigateur.
-
-```bash
-git clone https://github.com/palks-studio/devis-generator.git
-cd devis-generator
-open index.html
-```
-
-
-Ou simplement déposer le fichier sur n'importe quel hébergement statique (Netlify, GitHub Pages, etc.).
-
----
-
 ## Stack
 
 | Technologie                                     | Usage                      |
