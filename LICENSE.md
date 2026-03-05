@@ -12,7 +12,7 @@ Unless explicitly stated otherwise, the following rights are granted:
 - Installation on multiple devices is permitted  
 - Modification and adaptation are permitted for internal use
 
-These rights are granted to the end purchaser only.
+These rights are granted to any user of this tool.
 
 ## Restrictions
 
