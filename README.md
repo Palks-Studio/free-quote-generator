@@ -41,21 +41,6 @@ A 100% client-side web tool to generate professional PDF quotes — no account, 
 
 ---
 
-## Usage
-
-No installation required. Just open `index.html` in a browser.
-
-```bash
-git clone https://github.com/palks-studio/devis-generator.git
-cd devis-generator
-open index.html
-```
-
-
-Or drop the file on any static hosting (Netlify, GitHub Pages, etc.).
-
----
-
 ## Stack
 
 | Technology                                     | Usage                      |
