@@ -26,6 +26,17 @@ A 100% client-side web tool to generate professional PDF quotes — no account, 
 
 ---
 
+## Use cases
+
+Typical usage scenarios:  
+
+- freelancers generating quick quotes  
+- consultants sending simple proposals  
+- small businesses preparing client quotes  
+- educational examples of client-side PDF generation
+
+---
+
 ## Features
 
 - PDF quote generation directly in the browser  
@@ -53,12 +64,42 @@ No framework, no NPM dependencies, no build step.
 
 ---
 
+## How it works
+
+The generator runs entirely in the browser.
+
+Workflow:  
+
+1. User fills the quote form  
+2. Data is processed in JavaScript  
+3. The PDF is generated using **jsPDF**  
+4. The file is downloaded locally
+
+No request is sent to a server and no data is stored.
+
+---
+
 ## Structure
 
 ```
 index.html       # All-in-one: form + styles + logic + PDF generation
 ```
 
+
+---
+
+## Limitations
+
+This tool is designed for simple quote generation.
+
+It does not include:  
+
+- server-side storage  
+- invoice numbering systems  
+- accounting integrations  
+- payment processing
+
+For advanced workflows, a dedicated billing system is required.
 
 ---
 
