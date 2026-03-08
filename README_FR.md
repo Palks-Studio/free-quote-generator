@@ -26,6 +26,17 @@ Un outil web 100% client-side pour générer des devis professionnels en PDF, sa
 
 ---
 
+## Cas d’usage
+
+Exemples d’utilisation :  
+
+- freelances générant rapidement un devis  
+- consultants envoyant une proposition simple  
+- petites structures préparant un devis client  
+- démonstration pédagogique de génération de PDF côté navigateur
+
+---
+
 ## Fonctionnalités
 
 - Génération de devis PDF directement dans le navigateur  
@@ -53,12 +64,42 @@ Aucun framework, aucune dépendance NPM, aucun build step.
 
 ---
 
+## Fonctionnement
+
+Le générateur fonctionne entièrement dans le navigateur.
+
+Flux de fonctionnement :  
+
+1. l’utilisateur remplit le formulaire de devis  
+2. les données sont traitées en JavaScript  
+3. le PDF est généré avec **jsPDF**  
+4. le fichier est téléchargé localement
+
+Aucune requête n’est envoyée à un serveur et aucune donnée n’est stockée.
+
+---
+
 ## Structure
 
 ```
 index.html       # Tout-en-un : formulaire + styles + logique + génération PDF
 ```
 
+
+---
+
+## Limitations
+
+Cet outil est conçu pour la génération simple de devis.
+
+Il ne comprend pas :  
+
+- de stockage côté serveur  
+- de système de numérotation comptable  
+- d’intégration avec un logiciel de facturation  
+- de système de paiement
+
+Pour des usages plus avancés, un moteur de facturation dédié est nécessaire.
 
 ---
 
