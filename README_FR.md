@@ -8,6 +8,7 @@
 ![PDF](https://img.shields.io/badge/Output-PDF-0095b1?style=flat)
 ![No Dependencies](https://img.shields.io/badge/Dependencies-0-27ae60?style=flat)
 ![Bilingual](https://img.shields.io/badge/Lang-FR%20%2F%20EN-8e44ad?style=flat)
+[![Quote Generator](https://img.shields.io/badge/Quote%20Generator-0095b1?style=flat)](https://palks-studio.com/fr/generateur-devis)
 
 <p align="center">
   <a href="https://palks-studio.com">
