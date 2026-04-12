@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/generateur-devis-en-light.png" alt="Quote generator interface — Palks Studio" width="1200">
+  <img src="docs/images/generateur-devis-en-light.png" alt="Quote generator interface — Palks Studio" width="600">
 </p>
 
 > 🇬🇧 English | [🇫🇷 Français](./README_FR.md)
