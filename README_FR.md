@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/generateur-devis-fr-light.png" alt="Interface du générateur de devis — Palks Studio" width="1200">
+  <img src="docs/images/generateur-devis-fr-light.png" alt="Interface du générateur de devis — Palks Studio" width="600">
 </p>
 
 > 🇫🇷 Français | [🇬🇧 English](./README.md)
