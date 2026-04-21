@@ -18,7 +18,7 @@
 
 # Générateur de devis gratuit — Palks Studio
 
-> Ce dépôt constitue une présentation technique et une documentation du projet.  
+> Ce dépôt constitue une présentation technique et une démonstration du système.  
 > Il ne contient pas de code source téléchargeable ni de fichiers de production.
 
 Un outil web 100% client-side pour générer des devis professionnels en PDF, sans compte, sans serveur, sans données transmises.
