@@ -18,7 +18,7 @@
 
 # Free Quote Generator — Palks Studio
 
-> This repository is a technical presentation and documentation repository.  
+> This repository is a technical presentation and demonstration of the system.  
 > It does not contain downloadable source code or production files.
 
 A 100% client-side web tool to generate professional PDF quotes — no account, no server, no data transmitted.
