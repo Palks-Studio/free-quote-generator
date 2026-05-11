@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/generateur-devis-en.png" alt="Quote generator interface — Palks Studio" width="600">
+  <img src="docs/images/generateur-devis-en.png" alt="Quote generator interface — Palks Studio" width="1200">
 </p>
 
 > 🇬🇧 English | [🇫🇷 Français](./README_FR.md)
@@ -23,7 +23,7 @@
 
 A 100% client-side web tool to generate professional PDF quotes — no account, no server, no data transmitted.
 
-**[→ Open the tool](https://palks-studio.com/fr/generateur-devis)**
+**[→ Open the tool](https://palks-studio.com/en/quote-generator)**
 
 ---
 
@@ -50,6 +50,20 @@ Typical usage scenarios:
 - Print-friendly design — white background, minimal ink  
 - Automatic form reset after download  
 - No data stored, no cookies, no tracking
+
+---
+
+## Tax compliance — VAT legal mentions
+
+The generator automatically applies the correct VAT legal mention based on the issuer's situation:
+
+| Situation                                    | Generated mention                                                            |
+|----------------------------------------------|------------------------------------------------------------------------------|
+| Issuer not subject to VAT (micro-enterprise) | TVA non applicable, art. 293B du CGI                                         |
+| EU client with intra-community VAT number    | Reverse charge — VAT due by the recipient, art. 283-2 of the French Tax Code |
+| Non-EU client                                | VAT exemption — art. 262 I of the French General Tax Code                    |
+
+These mentions are not optional. Their absence on an invoice or quote may constitute a fiscal compliance issue during a tax audit.
 
 ---
 
