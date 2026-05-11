@@ -53,6 +53,20 @@ Exemples d’utilisation :
 
 ---
 
+## Conformité fiscale — mentions légales TVA
+
+Le générateur applique automatiquement la mention légale TVA adaptée selon la situation de l'émetteur :
+
+| Situation                                               | Mention générée                                             |
+|---------------------------------------------------------|-------------------------------------------------------------|
+| Émetteur non assujetti à la TVA (micro-entreprise)      | TVA non applicable, art. 293B du CGI                        |
+| Client UE avec numéro de TVA intracommunautaire         | Autoliquidation — TVA due par le preneur, art. 283-2 du CGI |
+| Client hors UE                                          | Exonération de TVA — art. 262 I du CGI                      |
+
+Ces mentions ne sont pas optionnelles. Leur absence sur une facture ou un devis peut constituer un défaut de conformité fiscale lors d'un contrôle.
+
+---
+
 ## Stack
 
 | Technologie                                     | Usage                      |
