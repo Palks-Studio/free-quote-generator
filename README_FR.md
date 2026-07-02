@@ -25,7 +25,7 @@
 
 Un outil web 100% client-side pour générer des devis professionnels en PDF, sans compte, sans serveur, sans données transmises.
 
-**[→ Accéder à l'outil](https://palks-studio.com/fr/generateur-devis)**
+[Accéder à la ressource](https://palks-studio.com/fr/generateur-devis)
 
 ---
 
