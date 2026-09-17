@@ -5,6 +5,7 @@
 > 🇫🇷 Français | [🇬🇧 English](./README.md)
 
 ![License](https://img.shields.io/badge/License-LICENSE.md-lightgreen.svg)
+![France & USA](https://img.shields.io/badge/Issuers-France%20%26%20USA-0095b1?style=flat)
 ![PDF](https://img.shields.io/badge/Output-PDF-0095b1?style=flat)
 ![No Dependencies](https://img.shields.io/badge/Dependencies-0-27ae60?style=flat)
 ![Bilingual](https://img.shields.io/badge/Lang-FR%20%2F%20EN-8e44ad?style=flat)
@@ -18,12 +19,12 @@
   </a>
 </p>
 
-# Générateur de devis gratuit — Palks Studio
+# Générateur de devis gratuit France & USA — Palks Studio
 
 > Ce dépôt constitue une présentation technique et une démonstration du système.  
 > Il ne contient pas de code source téléchargeable ni de fichiers de production.
 
-Un outil web 100% client-side pour générer des devis professionnels en PDF, sans compte, sans serveur, sans données transmises.
+Un outil web 100% client-side pour générer des devis professionnels en PDF pour les émetteurs établis en France et aux États-Unis, sans compte, sans serveur, sans données transmises.
 
 [Accéder à la ressource](https://palks-studio.com/fr/generateur-devis)
 
@@ -36,36 +37,54 @@ Exemples d’utilisation :
 - freelances générant rapidement un devis  
 - consultants envoyant une proposition simple  
 - petites structures préparant un devis client  
-- démonstration pédagogique de génération de PDF côté navigateur
+- démonstration pédagogique de génération de PDF côté navigateur  
+- entreprises et indépendants établis en France ou aux États-Unis  
+- devis internationaux en EUR, USD et autres devises prises en charge
 
 ---
 
 ## Fonctionnalités
 
 - Génération de devis PDF directement dans le navigateur  
-- Bilingual **FR / EN** — interface et PDF  
+- Bilingue **FR / EN** — interface et PDF  
+- Émetteurs **France / États-Unis**  
+- Informations émetteur adaptées au pays : SIRET, SIREN, TVA intracommunautaire ou EIN  
 - Logo personnalisé (PNG, JPEG, SVG, WebP)  
-- Informations émetteur complètes : SIRET, SIREN, TVA intracommunautaire  
-- Lignes de prestations dynamiques avec calcul automatique HT / TVA / TTC  
+- Lignes de prestations dynamiques avec calcul automatique HT / taxes / total  
 - Multi-devises : EUR, USD, GBP, CHF, CAD  
+- Gestion de la TVA française et de la Sales Tax américaine selon le contexte  
 - Bloc **Bon pour accord** avec date et signature  
 - Design print-friendly — fond blanc, encre minimale  
 - Reset automatique du formulaire après téléchargement  
-- Aucune donnée conservée, aucun cookie, aucun tracking
+- Aucune donnée transmise, aucun cookie, aucun tracking
 
 ---
 
-## Conformité fiscale — mentions légales TVA
+## Gestion fiscale France & États-Unis
 
-Le générateur applique automatiquement la mention légale TVA adaptée selon la situation de l'émetteur :
+Le générateur adapte les règles fiscales et les mentions affichées selon le pays de l'émetteur, le pays et le type de client, ainsi que la nature de l'opération.
 
-| Situation                                               | Mention générée                                             |
-|---------------------------------------------------------|-------------------------------------------------------------|
-| Émetteur non assujetti à la TVA (micro-entreprise)      | TVA non applicable, art. 293B du CGI                        |
-| Client UE avec numéro de TVA intracommunautaire         | Autoliquidation — TVA due par le preneur, art. 283-2 du CGI |
-| Client hors UE                                          | Exonération de TVA — art. 262 I du CGI                      |
+### France
 
-Ces mentions ne sont pas optionnelles. Leur absence sur une facture ou un devis peut constituer un défaut de conformité fiscale lors d'un contrôle.
+Le générateur prend notamment en charge :
+
+- la TVA française  
+- les opérations intracommunautaires  
+- l'autoliquidation lorsque les conditions correspondantes sont réunies  
+- les opérations avec des clients hors UE  
+- la franchise en base avec la référence CIBS utilisée par le générateur
+
+### États-Unis
+
+Pour un émetteur établi aux États-Unis, le générateur prend notamment en charge :
+
+- l'identification de l'émetteur par EIN  
+- la facturation en USD  
+- la Sales Tax pour les opérations domestiques lorsque l'émetteur indique être enregistré  
+- l'absence de Sales Tax américaine pour les clients étrangers  
+- les cas de prestations B2B vers l'Union européenne avec numéro de TVA
+
+Le taux de Sales Tax américain n'est pas déterminé automatiquement. Lorsqu'une taxe est applicable, son taux est renseigné par l'utilisateur.
 
 ---
 
@@ -114,7 +133,8 @@ Il ne comprend pas :
 - de stockage côté serveur  
 - de système de numérotation comptable  
 - d’intégration avec un logiciel de facturation  
-- de système de paiement
+- de système de paiement  
+- de calcul automatique des taux de Sales Tax américains selon l'État, le comté ou la juridiction
 
 Pour des usages plus avancés, un moteur de facturation dédié est nécessaire.
 
