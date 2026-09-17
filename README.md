@@ -5,6 +5,7 @@
 > 🇬🇧 English | [🇫🇷 Français](./README_FR.md)
 
 ![License](https://img.shields.io/badge/License-LICENSE.md-lightgreen.svg)
+![France & USA](https://img.shields.io/badge/Issuers-France%20%26%20USA-0095b1?style=flat)
 ![PDF](https://img.shields.io/badge/Output-PDF-0095b1?style=flat)
 ![No Dependencies](https://img.shields.io/badge/Dependencies-0-27ae60?style=flat)
 ![Bilingual](https://img.shields.io/badge/Lang-FR%20%2F%20EN-8e44ad?style=flat)
@@ -18,12 +19,12 @@
   </a>
 </p>
 
-# Free Quote Generator — Palks Studio
+# Free Quote Generator for France & USA — Palks Studio
 
-> This repository is a technical presentation and demonstration of the system.  
+> This repository provides a technical presentation and demonstration of the system.  
 > It does not contain downloadable source code or production files.
 
-A 100% client-side web tool to generate professional PDF quotes — no account, no server, no data transmitted.
+A 100% client-side web tool for generating professional PDF quotes for issuers established in France and the United States, with no account, no server and no data transmitted.
 
 [Access the Resource](https://palks-studio.com/en/quote-generator)
 
@@ -33,39 +34,57 @@ A 100% client-side web tool to generate professional PDF quotes — no account, 
 
 Typical usage scenarios:  
 
-- freelancers generating quick quotes  
-- consultants sending simple proposals  
-- small businesses preparing client quotes  
-- educational examples of client-side PDF generation
+- freelancers quickly generating a client quote  
+- consultants preparing a professional proposal  
+- small businesses creating quotes for their clients  
+- businesses and independent professionals established in France or the United States  
+- international quotes in EUR, USD and other supported currencies  
+- educational demonstration of client-side PDF generation
 
 ---
 
 ## Features
 
 - PDF quote generation directly in the browser  
-- Bilingual **FR / EN** — interface and PDF  
-- Custom logo upload (PNG, JPEG, SVG, WebP)  
-- Full issuer details: company number, VAT number  
-- Dynamic line items with automatic subtotal / VAT / total calculation  
-- Multi-currency: EUR, USD, GBP, CHF, CAD  
-- **Approval block** with date and signature fields  
-- Print-friendly design — white background, minimal ink  
+- Bilingual **FR / EN** interface and PDF  
+- Issuers in **France and the United States**  
+- Country-specific issuer information: SIRET, SIREN, EU VAT number or EIN  
+- Custom logo support (PNG, JPEG, SVG, WebP)  
+- Dynamic service lines with automatic subtotal, tax and total calculations  
+- Multi-currency support: EUR, USD, GBP, CHF, CAD  
+- French VAT and US Sales Tax handling depending on the context  
+- **Good for agreement / Bon pour accord** section with date and signature  
+- Print-friendly design with a white background and minimal ink usage  
 - Automatic form reset after download  
-- No data stored, no cookies, no tracking
+- No data transmitted, no cookies, no tracking
 
 ---
 
-## Tax compliance — VAT legal mentions
+## Tax handling — France & United States
 
-The generator automatically applies the correct VAT legal mention based on the issuer's situation:
+The generator adapts tax rules and legal notices according to the issuer's country, the client's country and type, and the nature of the transaction.
 
-| Situation                                    | Generated mention                                                            |
-|----------------------------------------------|------------------------------------------------------------------------------|
-| Issuer not subject to VAT (micro-enterprise) | TVA non applicable, art. 293B du CGI                                         |
-| EU client with intra-community VAT number    | Reverse charge — VAT due by the recipient, art. 283-2 of the French Tax Code |
-| Non-EU client                                | VAT exemption — art. 262 I of the French General Tax Code                    |
+### France
 
-These mentions are not optional. Their absence on an invoice or quote may constitute a fiscal compliance issue during a tax audit.
+The generator handles situations including:
+
+- French VAT  
+- intra-EU transactions  
+- reverse charge when the corresponding conditions are met  
+- transactions with clients outside the EU  
+- VAT exemption under the CIBS reference used by the generator
+
+### United States
+
+For issuers established in the United States, the generator handles situations including:
+
+- issuer identification using an EIN  
+- billing in USD  
+- Sales Tax for domestic transactions when the issuer indicates that it is registered  
+- no US Sales Tax for foreign clients  
+- B2B services supplied to EU businesses with a VAT number
+
+US Sales Tax rates are not determined automatically. When tax applies, the rate is entered manually by the user.
 
 ---
 
@@ -102,7 +121,6 @@ No request is sent to a server and no data is stored.
 index.html       # All-in-one: form + styles + logic + PDF generation
 ```
 
-
 ---
 
 ## Limitations
@@ -114,7 +132,8 @@ It does not include:
 - server-side storage  
 - invoice numbering systems  
 - accounting integrations  
-- payment processing
+- payment processing  
+- automatic calculation of US Sales Tax rates by state, county or jurisdiction
 
 For advanced workflows, a dedicated billing system is required.
 
